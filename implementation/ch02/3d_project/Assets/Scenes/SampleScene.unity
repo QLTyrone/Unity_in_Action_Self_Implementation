@@ -1711,10 +1711,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 949497266804342859, guid: bf35ca79190334b22859981d96d38b10, type: 3}
-      propertyPath: fireballPrefab
-      value: 
-      objectReference: {fileID: 9130168101138876806, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
     - target: {fileID: 1688460427328092345, guid: bf35ca79190334b22859981d96d38b10, type: 3}
       propertyPath: m_Name
       value: Enemy
