@@ -1056,6 +1056,7 @@ GameObject:
   - component: {fileID: 1140057084}
   - component: {fileID: 1140057085}
   - component: {fileID: 1140057086}
+  - component: {fileID: 1140057087}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1124,14 +1125,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140057079}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -21.99, y: 1.1, z: 18.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!143 &1140057084
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1188,6 +1189,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   gravity: -9.8
+--- !u!114 &1140057087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140057079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b6b5ca2cb0c48f9b7617a180b6052f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1383203597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,6 +1646,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &93068830031160991
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.59499
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5098305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 42.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8308656014263126455, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9130168101138876806, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
+      propertyPath: m_Name
+      value: Fireball
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
 --- !u!1001 &2753168492080199360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1641,6 +1711,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 949497266804342859, guid: bf35ca79190334b22859981d96d38b10, type: 3}
+      propertyPath: fireballPrefab
+      value: 
+      objectReference: {fileID: 9130168101138876806, guid: cc3010a7f519340f4b5d29f14a628723, type: 3}
     - target: {fileID: 1688460427328092345, guid: bf35ca79190334b22859981d96d38b10, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -1708,3 +1782,4 @@ SceneRoots:
   - {fileID: 1383203600}
   - {fileID: 2753168492080199360}
   - {fileID: 933629859}
+  - {fileID: 93068830031160991}
